@@ -1,0 +1,20 @@
+nav {
+    width: 100%;
+    background:  rgb(87, 87, 87);
+    color: rgb(211, 211, 211);
+}
+.navText    {
+    color: rgb(211, 211, 211);
+}
+
+header  {
+    height: 300px;
+    width: 100%;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    padding-top: 120px;
+
+}
