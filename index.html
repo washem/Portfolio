@@ -7,14 +7,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <style>
-        body {
-            height: 3000px;
-            margin-top: 30px;
-        }
-    </style>
     <!--fontawesome-->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
+        crossorigin="anonymous"></script>
 
     <!--css-->
 
@@ -29,22 +24,33 @@
 </head>
 
 <body>
-    <header>
-        <h1>sweet header</h1>
+    <header id="top" style="background-color:#e3e2e2">
+        <h1>Eric Washburn</h1>
+        <div style="width: 200px ;display: flex ; justify-content: space-around; font-size: 300%" class="text-center">
+            <a href="https://www.linkedin.com/in/eric-m-washburn/">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/washem">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
     </header>
     <nav class="navbar">
-        <div style="margin-left: 5%;">
-            <a class="navText" href='#'>Home</a>
+        <div class="container-fluid" style="width:1000px">
+            <div style="margin-left: 5%;">
+                <a class="navText" href='#top'>Home</a>
+            </div>
+            <div style="width:300px; margin-right: 5% ; display:flex ;justify-content: space-around">
+                <a class="navText" href='#first'>About</a>
+                <a class="navText" href='#second'>Experience</a>
+                <a class="navText" href='#third'>Projects</a>
+            </div>
         </div>
-        <div style="width:300px; margin-right: 5% ; display:flex ;justify-content: space-around">
-            <a class="navText" href='#first'>About</a>
-            <a class="navText" href='#second'>Experience</a>
-            <a class="navText" href='#third'>Projects</a>
-        </div>
-    </nav>
-    <div class="container-fluid">
 
-        <div id="first">
+    </nav>
+    <div id="main" class="container-fluid" style="width:1000px">
+
+        <div id="first" style="padding-top:50px">
             <h2>
                 A little blurb about me!
             </h2>
@@ -60,7 +66,7 @@
             </p>
 
         </div>
-        <div id="second">
+        <div id="second" style="padding-top:50px">
             <h2>
                 My experience
             </h2>
@@ -69,13 +75,15 @@
                 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
-        <div id="third">
+        <div id="third" style="background-color: gainsboro; margin-top:50px; padding-top: 50px;">
             <h2>
                 Projects
             </h2>
-            <div class="project-container">
+            <div class="project-container" style="padding-top:50px">
                 <div>
-                    <h3><em>Whats Lit</em></h3>
+                    <h3>
+                        <em>Whats Lit</em>
+                    </h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                         dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
                         ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
@@ -83,66 +91,79 @@
                         deserunt mollit anim id est laborum.</p>
                 </div>
 
-                <div class="thumbnail" style="margin: auto ; width:50%">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/2gOtNjfhYjE" frameborder="0" allow="autoplay; encrypted-media"
-                        allowfullscreen></iframe>
+                <div id="project">
+                    <div class="thumbnail" style="margin: auto">
+                        <iframe width="80%" height="50%" src="https://www.youtube.com/embed/2gOtNjfhYjE" frameborder="0" allow="autoplay; encrypted-media"
+                            allowfullscreen></iframe>
                         <div class="caption text-center">
-                                <p>
-                                    light description
-                                </p>
-                            </div>
+                            <p>
+                                light description
+                            </p>
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
             <div class="project-container">
                 <div>
-                    <h3><em>Alibay Marketplace</em></h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                            anim id est laborum.</p>
+                    <h3>
+                        <em>Alibay Marketplace</em>
+                    </h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                        eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                        deserunt mollit anim id est laborum.</p>
                 </div>
-
-                <div class="thumbnail" style="margin: auto ; width: 50%">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Jc7LbmBa-dU" frameborder="0" allow="autoplay; encrypted-media"
-                        allowfullscreen></iframe>
+                <div id="project">
+                    <div class="thumbnail" style="margin: auto">
+                        <iframe width="80%" height="50%" src="https://www.youtube.com/embed/Jc7LbmBa-dU" frameborder="0" allow="autoplay; encrypted-media"
+                            allowfullscreen></iframe>
                         <div class="caption text-center">
-                                <p>
-                                    light description
-                                </p>
-                            </div>
-                </div>
-
-            </div>
-            <div class="project-container">
-                <div>
-                    <h3><em>Canvas Game</em></h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                            anim id est laborum.</p>
-                </div>
-
-                <div class="thumbnail" style="margin:auto ; width:50%">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/sQoVJTvNfeI" frameborder="0" allow="autoplay; encrypted-media"
-                        allowfullscreen></iframe>
-                    <div class="caption text-center">
-                        <p>
-                            light description
-                        </p>
+                            <p>
+                                light description
+                            </p>
+                        </div>
                     </div>
                 </div>
+
+
+            </div>
+            <div class="project-container">
+                <div>
+                    <h3>
+                        <em>Canvas Game</em>
+                    </h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                        eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                        deserunt mollit anim id est laborum.</p>
+                </div>
+                <div id="project">
+                        <div class="thumbnail" style="margin:auto ">
+                                <iframe width="80%" height="50%" src="https://www.youtube.com/embed/sQoVJTvNfeI" frameborder="0" allow="autoplay; encrypted-media"
+                                    allowfullscreen></iframe>
+                                <div class="caption text-center">
+                                    <p>
+                                        light description
+                                    </p>
+                                </div>
+                            </div>
+                </div>
+
 
             </div>
 
         </div>
-        <div style="width: 300px ;display: flex ; justify-content: space-around; font-size: 300%" class="text-center" >
-            <a  href="https://www.linkedin.com/in/eric-m-washburn/"><i class="fab fa-linkedin"></i>
-                </a>
-            <a href="https://github.com/washem"><i class="fab fa-github"></i>
-                </a>
+        <div style="padding: 20px;width: 300px ;display: flex ; justify-content: space-around; font-size: 300%" class="text-center">
+            <a href="https://www.linkedin.com/in/eric-m-washburn/">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/washem">
+                <i class="fab fa-github"></i>
+            </a>
         </div>
     </div>
 
