@@ -12,12 +12,13 @@
         crossorigin="anonymous"></script>
 
     <!--css-->
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css">
     <link href="portfolio.css" rel="stylesheet" type "text/css">
     <!--JQuery-->
-    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" ></script>
+
+
     <script type="text/javascript" src="index.js"></script>
 
 
@@ -36,8 +37,43 @@
         </div>
     </header>
     <nav class="navbar">
-        <div class="container-fluid" style="width:1000px" style="margin-right: 5%">
+        <div class="container-fluid row navbar-expand-sm navbar-light bg-light" style="width: 1000px; margin: auto; flex-wrap: unset !important;">
+                <a class="navbar-brand" href="#top">Home</a>
+                
+                <div class="container-fluid collapse navbar-collapse" id="navbarNavDropdown" style="flex-wrap: wrap !important">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#first">About <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#second">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#third">Projects</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown link
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+        </div>
+                
+           
             
+          </nav>
+
+    <!-- <nav class="navbar">
+        <div class="container-fluid" style="width:1000px" style="margin-right: 5%">
             <a class="col-sm-2 navText" href='#top'>Home</a>
           
             <div class="container-fluid row" style="width:400px; margin-right: 5% ; display:flex ;justify-content: space-around">
@@ -48,7 +84,7 @@
             </div>
         </div>
 
-    </nav>
+    </nav> -->
     <div id="main" class="container-fluid" style="width:1000px">
 
         <div id="first" style="padding-top:50px">
@@ -170,7 +206,13 @@
         </footer>
 
 
-    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+        
+        
+        
+  
 </body>
 
 </html>
